@@ -1,1 +1,69 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
 
+   <<<  It took around 8 hours to complete this project>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<< 3.5 >>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Generating the Waltz)
+      Approach: I created the 2D list with the dimension 11 * 16 using the function stdarray.create
+      .2D()  filled with minuet measures, which is  read from the standard input. Similarly, I
+      read the trio measures  from standard input into the 2D list of dimension 6 * 16. I wrote the
+      standard output of the random sequences of 16 minuet measures , which was the value i got
+      from the minute table of two dimension matrix. The value for choosing index for  column was
+      done  by generating the random integer between the value of [1,15] and the index for the row
+      in the minute measure was the sum of  two dice roll which was the value between [0,10]. Like
+      wise the random sequences of the 16 trio measures was written to standard output where the
+      column index  was determined by the random value obtained between the [0,15] during each
+      iteration, and row index was the value between[0,5] which was the value obtained by rolling
+      the die at each iteration. In this way the 16 minute measures and 16 trio measures read from
+      standard input were written to the standard output using the loops and randomly generated
+      value.
+
+
+
+      Issues and resolution: This was the problem which  made me familiar to read the values from
+      standard Input and work on those value.
+
+   Problem 2 (Playing the Waltz)
+      Approach: In this problem I read the output of earlier program(generating the
+      waltz) as the standard  input for this problem. I read the waltz measures from the standard
+      input into the 1D list. I checked different conditions before playing the sound related to
+      corresponding measure. In this problem I checked the condition if the number of measures was
+      not equals to 32 , exited with the message “A waltz must contain exactly 32 measures”,
+      similarly condition was for the minute measures in this condition our minute measures i.e the
+      first 16 value of the measures were checked if the value was not in range between [1,176] the
+      program was exited with the message “A minuet measure must be from [1, 176]”, and remaining
+      measures if were not in range of [1, 96], we exited with the message “A trio measure must
+      be from [1, 96]”. If all the conditions were satisfied , I played the sound with the
+      corresponding measures. 16 Minute measures were played by calling the stdaudio.playFile
+      (filename) where filename was set to according the value of minute measure and trio measures
+      for rest last 16 value was played setting the filename according to the value of trio measures
+      .
+
+      Issues and resolution: It was fun problem to work with , which was the linked problem with the
+       earlier one. I had great time working with this project . The problem introduced to the new
+       header function stdaudio relating to working with sound in the problem.
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+ This project 3 was really helpful , I worked with the arrays and had more idea of working with the
+ arrays.  Also working with the sound was fun as i had some amazing time ending up getting results
+ that made me happy . I am looking forward to getting more project relating to generating much fun
+ output that would be fun to work with. Yet again the instructions provided were much more helpful
+ to solve the problems.
