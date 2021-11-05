@@ -1,1 +1,99 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
 
+   <<<6>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Day of the Week)
+      Approach: I accepted 3 integer value as command line argument for month, date and year.
+    we used following steps to represent and write the day of week in terms of numeric value .
+      y0 = y − (14 − m)/12,
+    x0 = y0 + y0/4 − y0/100 + y0/400,
+    m0 = m + 12 × ((14 − m)/12) − 2,
+    dow = (d + x0 + 31 × m0/12) mod 7.
+      Issues and resolution: I had issue when not using the floored division but when I used
+      floored division which made my answer  non fractional which was required output.
+
+   Problem 2 (Mercator Projection)
+      Approach: I imported math function . I used command line argument to get value for longitude,
+      used  math. radian  to convert to   radians . I followed the steps
+      given in  write up and wrote the corresponding value of x and y in the output.
+
+
+      Issues and resolution: I had issue with getting the output when i forgot to convert the value
+      to radians.
+
+   Problem 3 (Great Circle Distance)
+      Approach: I imported math function  accepted x1 (float), y1 (float), x2 (float), and y2
+      (float) as command-line arguments, representing the latitude and longitude in degrees of two
+      points on Earth, and wrote the great circle distance using the formula given
+      Issues and resolution: I had issue with parenthesis management.
+
+   Problem 4 (Wind Chill)
+      Approach: I  got the float value for temperature  and wind speed using command line arguments
+      and used the formula given to find the effective temperature.
+
+      Issues and resolution: I had no issue with this problem.
+
+   Problem 5 (Gravitational Force)
+      Approach: I wrote a program which accepts two masses, and distance as a float  and computed
+      the gravitational force using the formula given , using the constant value of G.
+
+
+      Issues and resolution: I had no issue with this problem.
+
+   Problem 6 (Snell's Law)
+      Approach: I used math function and used it to calculate the angle of refraction using the
+      formula given  to find the angle of refraction.
+
+      Issues and resolution:  I did not have any issue with this project .
+
+   Problem 7 (Gambler's Ruin)
+      Approach: I accepted n1 , n2 , and p  as command-line arguments, and wrote   the probabilities p1 and p2 to
+      standard output, separated by a space using the given formula.
+
+      Issues and resolution: I had issue with writing the formula correctly while coding.
+
+   Problem 8 (Waiting Time)
+      Approach: I wrote program that accepted λ (float) and t (float) as command-line arguments, and
+          writes the probability p to standard output using the formula given in the writeup .
+
+      Issues and resolution: I had issue writing λ so wrote it as variable lambda.
+
+   Problem 9 (Die Roll)
+      Approach: I accepted integer  n as command line argument , used stdrandom.uniformInt() with
+      argument to stimulate a single roll of an n-sided die and wrote it to output.
+
+      Issues and resolution: There was no error in this problem too.
+
+   Problem 10 (Three Sort)
+      Approach: I accepted 3 integer and used max() and min() to find the maximum and minimum value
+      between the integer entered. I subtracted the smallest and highest from the 3 integer to find
+      the middle value and printed to output in ascending order.
+
+      Issues and resolution: There was no error in the problem too.
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+ This was my first project in python. This project was fun to work on as the information provided my
+  professor made a lot easier to work on the given project. I learned  to check the coding style,
+  used different functions, and have idea of using formula to solve problems in python.I learned
+  problem solving strategy. I think these python problem can help me a lot in tackling the future
+  projects and has certainly boosted my confidence.
