@@ -1,1 +1,86 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
 
+   <<< It took me like like 10 hours to complete this project.>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<< 4 >>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (RSA Library)
+      Approach: I created a different function like _sample() to returning the list containing
+      random sample, _prime function to get the list containing the prime number between the range
+      (lo,hi),where the lo and hi are the value passed by user while calling the function.
+      Similarly, _choice function which returned the random value from a list provided in the
+      program.These function were used as the sub function to keychain function which Generated and
+      returned the public/private keys as a tuple (n, e, d) where the prime number were picked
+      between the interval(lo, hi). Function encrypt was also made in the program which Encrypted x
+      (int) using the public key (n, e) and returned the encrypted value for x .likewise the
+      function decrypted was made which decrypted y (int) using the private key (n, d) and returned
+      the decrypted value, function bitLength (Returned the least number of bits needed to represent
+       n),dec2bin function (Returned the binary representation of n expressed in decimal, having the
+        given width, and padded with leading zeros and bin2dec(Returned the decimal representation
+        of n expressed in binary) this function were later used in the main function to encrypt,
+        decrypt, find a bit length,binary representation and decimal representation of value.
+
+
+
+      Issues and resolution: I had problem while working with _sample() function where i ended up
+      having an issue with the fixing the index.
+
+
+   Problem 2 (Keygen Program)
+      Approach: I imported the rsa.py the earlier program we did using import rsa in the program
+      . I accepted  lo (int) and hi (int) as command-line arguments under the main function. I got
+      the tuple using the function rsa.keygen(lo, hi) which returned the value for the tuple n, e,d
+      which  was the function created in earlier program. The three value in tuple was later written
+       in output.
+      Issues and resolution: I had no issue with the program, I got to learn how to use the function
+       made in the ealier program by importing it in another one.
+
+   Problem 3 (Encryption Program)
+      Approach: I accepted the public key n and e both int as command line arguments.I got the
+      number bits per character calling the function rsa.bitLength() the function from rsa program.I
+       accepted the message to encrypt from standard input and ran the loop for each character in
+       message which changed each c to integer value using the built in function ord().I encrypted
+       the integer calling the encrypt function made in rsa and wrote the encrypted value as width
+       long binary system, yet again calling the rsa.dec2bin() followed by newline character.
+
+            Issues and resolution: I had issue while running the loop through all the character of
+            the message and encrypting it.
+
+   Problem 4 (Decryption Program)
+      Approach: I accepted the  public key n and d as a command line argument. Got the width
+      which the  number of bits per character which was gained by calling the function rsa.bitLength
+      (n). Then i accepted the msg which was the binary string generated  by the encrypt.py from the
+       standard input. I ran the loop from the 0 to length of msg-1 where the loop was incremented
+       by the width value we got earlier in the program. I set the s substring of message from i to
+       i + width, set y to decimal representation of binary string s calling the function bin2dec
+       from rsa.py in this program. I decrypted the value of y using another function decrypt made
+       in rsa and wrote  the character corresponding to the decrypted value, obtained using the
+        built-in function chr().
+
+
+      Issues and resolution: I had trouble understanding the meaning what it meant to be substring
+      of the binary system.I also had some issue with the indention and all.
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+I enjoyed the project very much, I was stressed out due to so bad result in exam one however this
+project really made me feel that i am in the track and has encouraged me to work better on another
+one. The project really made a lot things easier as always by the help of the comments provided and
+the hints given by the professor.
