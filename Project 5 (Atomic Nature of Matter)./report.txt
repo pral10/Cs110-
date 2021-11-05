@@ -1,1 +1,146 @@
+1. Enter the number of hours it took you to complete the project between
 
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+
+
+   <<< I spent almost around 17 hours in this project>>>
+
+
+
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+
+
+   <<< 4.5>>>
+
+
+
+3. Provide a short description of how you approached each problem, issues you
+
+   encountered, and how you resolved those issues.
+
+
+
+   Problem 1 (Particle Representation)
+
+      Approach:
+
+      I created a class blob containing instance variable  of x coordinate, y c ordinate and number
+      of pixel. I initialized the blob to corresponding instance variables.using the idea of running
+       average to update the center of mass of blob .I created the constructor by using __init__ method
+       .likewise,I created the add method which has self, and   x, y coordinate of the mass  as a
+       argument.Then i incremented the value of blob by 1 . the distanceTo method was used to return
+        the Euclidean distance between the center of mass two different Blob.
+
+
+
+      Issues and resolution: This was my first project to work on method, I was little bit confused
+      in using the instance variable and initializing the value to them.
+
+
+   Problem 2 (Particle Identification)
+
+      Approach:
+
+        I created the Bob finder class with the instance variable and blob was identified by the list of
+   Blob variables.I created the a 2D list of boolean called marked which had the same dimension as
+   the pic. I enumurated the pixel of pic and for each pixel of (i,j) i created the blob object
+   called blob and _findBolb() with the appropriate arguments and as long as  there were non zero
+   mass I added all the blob to the blobs. I created the constructor called bf.findBolb with the
+   base case which returns when the pixel was out of bound (i,j) or if it was marked or it was
+   luminance in which case the luminance was the function luminance.luminance was included in the
+   program , it was returned if the value of tau was greater than luminance. After each call of the
+    method the pixel(i,j) was marked and the pixel (i,j) was added everytime using blob.add(). I
+    recursively called the _findBolb() method in every possible directions of the pixel. I also
+    created the method called bf.getBeads with pixels as argument which returned the blobs from the
+    blobs which had the mass greater or equals to the pixels to identify the particle.
+
+
+
+
+
+      Issues and resolution:
+
+      I got issues  while running the loops from the different width and height value , it made my
+      problems more complicated when i couldnot find my solutions even after many runs as it was
+      something that was my own error than the syntax or logical error.
+
+
+
+
+   Problem 3 (Particle Tracking)
+
+      Approach:
+
+      I imported the BlobFinder from blob and  imported the Picture from picture. I accepted the
+      pixel, tau and delta as the command line argument and I constructed the blobfinder objet for
+      the frame sys.argv[4], from which i got the list of beads prevBeads that had the least pixels
+      .Now for each frame starting at sys.argv[5] i constructed the blobfinder object and from it i
+      got the list of beads curBeads that had least pixels pixels.For each  beads curbead in
+      curbeads i found a prevbead from prevbeads which was no further than delta and closet to
+      curbead, if the such bead was found i wrote the distance using the format string %.4f\n to
+      curbead.I wrote the newline character and set the prebead to curbead to keep the tracking of
+      the particle.
+
+
+
+
+      Issues and resolution:
+
+      I made error in comparing the float data types and with distance object type.
+
+
+
+
+
+
+   Problem 4 (Data Analysis)
+
+      Approach:
+
+      I initialize ETA, RHO, T, and R to appropriate values.
+      I  Calculated var as the sum of the squares of the n displacements (each converted from
+      pixels to meters) read from standard input. I divided var by 2 * n.   I estimated Boltzmann’s
+      constant as 6 * math.pi * var * ETA * RHO / T.  I  estimated the Avogadro’s constant as R / k, where k is Boltzmann’s constant.
+  I Wrote to standard output the two constants in scientific notation (using the format
+      string ’%e’) and separated by a space.
+
+
+
+      Issues and resolution:
+
+      I did not get any issues in this problem.
+
+
+
+4. Did you receive help from anyone? List their names, status (classmate,
+
+   CS110 grad, TA, other), and the nature of help received.
+
+
+
+   Name               Status       Help Received
+
+   ----               ------       -------------
+
+
+
+   ...                ...          ...
+
+
+
+5. List any other comments here. Feel free to provide any feedback on how
+
+   much you learned from doing the assignment, and whether you enjoyed
+
+   doing it.
+
+
+
+  I learned how to use the method, constructor and class in the problems. The problem here gave me
+  brief knowledge of working on method and using one class of object on another program . The
+  problems were quite challenging and was fun to work on. As usual the hints provided with checklist
+   and writeup help me solve the project. 
